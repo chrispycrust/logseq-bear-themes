@@ -27,18 +27,24 @@
   }
 */
 
+:not(pre)>code { 
+  background: hsl(45 30% 86%); /* inline code style*/
+}
+
 .pr-2 { /* targets block but seems to also affect logseq item on nav menu */
 padding-bottom: 10px;
 }
 
-/* re-think how to name the following sections so the dark and light theme both use the same variables */
+/* -----------------------------
+re-think how to name the following sections so the dark and light theme both use the same variables 
 
-.left-sidebar-inner span { /* nav menu sidebar font color */
-  color: var(--ls-primary-background-color); /* yellow */
+nav menu sidebar font color
+.left-sidebar-inner span { 
+  color: var(--ls-primary-background-color); 
 }
   
 .left-sidebar-inner a.item:hover {
-  background: var(--dark-teal); /* dark teal is too specific to light theme, not present in dark theme */
+  background: var(--dark-teal); 
 }
   
   .cp__right-sidebar,
@@ -46,13 +52,12 @@ padding-bottom: 10px;
      background-color: var(--ls-tertiary-background-color);
   }
   
-  .tippy-tooltip { /* not the right selector targeting the tooltip ... it uses the quaternary background colour */
+  .tippy-tooltip { not the right selector targeting the tooltip ... uses the quaternary background colour
     background: red;
   }
+
+*/
   
-  :not(pre)>code { 
-    background: hsl(45 30% 86%); /* inline code style*/
-  }
 
 /*-------------------------------------------------------
 --------------------- SOLARIZED LIGHT ------------------
@@ -161,8 +166,11 @@ padding-bottom: 10px;
   --color-level-6: red;
 }
 
-.left-sidebar-inner span { /* nav menu sidebar font color */
-color: var(--ls-primary-background-color); /* yellow */
+/* -------------------
+colours specifically influencing light theme 
+
+.left-sidebar-inner span {  
+color: var(--ls-primary-background-color);
 }
 
 .left-sidebar-inner a.item:hover {
@@ -178,9 +186,7 @@ background: var(--dark-teal);
 background: red;
 }
 
-:not(pre)>code { 
-background: hsl(45 30% 86%); /* inline code style*/
-}
+*/
 
 /*-------------------------------------------------------
 ------------------------- CHARCOAL ----------------------
